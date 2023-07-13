@@ -1,7 +1,7 @@
 name: Terraform Plan
 on: push
 env:
-  AWS_ACCRESS_KEY_ID: ${{secrets.AWS_ACCRESS_KEY_ID}}
+  AWS_ACCRESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
   AWS_SECREY_ACCESS_ID: ${{secrets.AWS_SECREY_ACCESS_ID}}
   TF_VAR_aws_pub_key: ${{secrets.AWS_PUBLIC_KEY}}
 
