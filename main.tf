@@ -10,7 +10,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "primeirobucketlucaspalma-terraform1"
+    bucket = "bucketlucaspalma-terraform3"
     key    = "aws-vm/terraform.tfstate"
     region = "us-east-1"
   }
