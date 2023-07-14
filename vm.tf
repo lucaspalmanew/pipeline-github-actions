@@ -12,6 +12,6 @@ resource "aws_instance" "vm" {
   associate_public_ip_address = true
 
   tags = {
-    "Name" = "vm-terraform"
+    "Name" = "vm-terraformgithubactions"
   }
 }
