@@ -10,7 +10,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "bucketlucaspalma-terraform12"
+    bucket = "bucket-pipelinelucas"
     key    = "aws-vm/terraform.tfstate"
     region = "us-east-1"
   }
@@ -30,7 +30,7 @@ provider "aws" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "lucaspalma-remote-state"
+    bucket = "bucket-pipelinelucas"
     key    = "aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
